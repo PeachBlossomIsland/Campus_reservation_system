@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+<!--  字符编码过滤器  -->
+	
+	<servlet>
+		<servlet-name>HelloServlet</servlet-name>
+		<servlet-class>Servlet.RegisterServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>HelloServlet</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>Servlet.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>	
+	
+	<servlet>
+		<servlet-name>teainfo</servlet-name>
+		<servlet-class>Servlet.TeainfoServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>teainfo</servlet-name>
+		<url-pattern>/teainfo</url-pattern>
+	</servlet-mapping>	
+
+	<servlet>
+		<servlet-name>college</servlet-name>
+		<servlet-class>Servlet.CollegeServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>college</servlet-name>
+		<url-pattern>/college</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<servlet-name>signout</servlet-name>
+		<servlet-class>Servlet.SignoutServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>signout</servlet-name>
+		<url-pattern>/signout</url-pattern>
+	</servlet-mapping>	
+
+<servlet>
+    <servlet-name>UploadServlet</servlet-name>
+    <servlet-class>Servlet.UploadServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+    <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+</web-app>
